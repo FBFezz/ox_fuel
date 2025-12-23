@@ -22,6 +22,8 @@ function fuel.getPetrolCan(coords, refuel)
 
 	if lib.progressCircle({
 			duration = config.petrolCan.duration,
+        	position = 'bottom',
+        	label = 'Refueling Vehicle...',
 			useWhileDead = false,
 			canCancel = true,
 			disable = {
@@ -83,6 +85,8 @@ function fuel.startFueling(vehicle, isPump)
 	CreateThread(function()
 		lib.progressCircle({
 			duration = duration,
+        	position = 'bottom',
+        	label = 'Refueling Vehicle...',
 			useWhileDead = false,
 			canCancel = true,
 			disable = {
